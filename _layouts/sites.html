@@ -1,0 +1,12 @@
+---
+layout: default
+title: sites
+---
+
+{% for sites in site.data.sites %}
+  <a target="_blank" href="{{sites.siteurl}}" class="entry">
+    <img src="{{sites.image}}">
+    <p class="entry-name">{{sites.entryname}}</p>
+    <p class="entry-site">{{sites.entrysite}}</p>
+
+{% endfor %}

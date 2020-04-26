@@ -1,23 +1,12 @@
 ---
 layout: default
+title: Type
 ---
 
-<h2>{{ page.title }}</h2>
+{% for typography in site.data.typography %}
+  <a target="_blank" href="{{typography.siteurl}}" class="entry">
+    <img src="{{typography.image}}">
+    <p class="entry-name">{{typography.entryname}}</p>
+    <p class="entry-site">{{typography.entrysite}}</p>
 
-  {% include page-intro.html %}
-
-  {{ content }}
-
-  <section>
-
-    <h3>Recent posts from the blog</h3>
-
-    <ul>
-      {% for post in site.posts limit:3 %}
-        <li>
-          <a href="{{ post.url }}">{{ post.title }}</a>
-        </li>
-      {% endfor %}
-    </ul>
-
-  </section>
+{% endfor %}

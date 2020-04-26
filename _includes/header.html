@@ -1,11 +1,4 @@
-<header>
-
-  <h1>
-    <a href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
-  </h1>
-
-  <nav>
-    {% include navigation.html navigation=site.data.navigation %}
-  </nav>
-
-</header>
+<div class="top-bar">
+  <p style="color:gray"><span style="color:white">{{page.title}}</span> // {{page.description}}.</p>
+</div>
+<div class="top-bar-filler"></div>

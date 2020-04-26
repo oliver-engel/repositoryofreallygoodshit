@@ -9,15 +9,27 @@ layout: compress
 
   <body>
 
-    {% include header.html %}
+    <svg id="fader"></svg>
 
-    <main>
+    {% include sidebar.html %}
 
-      {{ content }}
+    <section class="content">
 
-    </main>
+      {% include header.html %}
 
-    {% include footer.html %}
+      <div class="main-content">
+
+        <div class="entry-group">
+
+          {{content}}
+
+        </div>
+      </div>
+
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="/assets/js/scripts.js"></script>
 
   </body>
 
