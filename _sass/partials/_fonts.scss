@@ -1,1 +1,8 @@
 // add font-face or font import declarations here
+@font-face {
+    font-family: 'Fakt Mono';
+    src: url('/assets/fonts/FaktMono-Blond.woff2') format('woff2'),
+        url('FaktMono-Blond.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}

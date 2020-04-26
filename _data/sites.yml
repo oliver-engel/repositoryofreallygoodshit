@@ -13,7 +13,52 @@
   siteurl: https://www.colorbox.io/
   image: assets/img/uploads/sites/colorbox.png
 
+- entryname: Flatfile
+  entrysite: Visual Publications
+  siteurl: http://flatfile.lubalincenter.com/
+  image: assets/img/uploads/sites/flatfile.png
+
 - entryname: The Pudding
   entrysite: Data Viz Journalism
   siteurl: https://pudding.cool/
-  image: assets/img/uploads/sites/pudding.png   
+  image: assets/img/uploads/sites/pudding.png
+
+- entryname: Cache Monet
+  entrysite: Trust me on this one.
+  siteurl: http://cachemonet.com/
+  image: assets/img/uploads/sites/cachemonet.png
+
+- entryname: Designed.Space
+  entrysite: Design Studio Spaces
+  siteurl: https://designed.space/
+  image: assets/img/uploads/sites/designedspace.png
+
+- entryname: Noteworthies
+  entrysite: Interesting Wikipedia Articles
+  siteurl: https://noteworthi.es/
+  image: assets/img/uploads/sites/noteworthies.png
+
+- entryname: Copychar
+  entrysite: Copy Any Character
+  siteurl: https://copychar.cc/
+  image: assets/img/uploads/sites/copychar.png
+
+- entryname: Legwork Studio
+  entrysite: Dead Website
+  siteurl: https://www.legworkstudio.com/
+  image: assets/img/uploads/sites/legwork.png
+
+- entryname: Brutalist Websites
+  entrysite: Site Archive
+  siteurl: https://brutalistwebsites.com/
+  image: assets/img/uploads/sites/brutalist.png
+
+- entryname: Digital Psychology
+  entrysite: Concept Teardowns
+  siteurl: https://digitalpsychology.io/
+  image: assets/img/uploads/sites/digitalpsychology.png
+
+- entryname: Sad Lunch Break
+  entrysite: Links for Eating Alone
+  siteurl: https://sadlunchbreak.com/
+  image: assets/img/uploads/sites/sadlunchbreak.png    

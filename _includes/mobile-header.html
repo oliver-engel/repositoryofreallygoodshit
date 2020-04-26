@@ -1,0 +1,23 @@
+<div class="top-bar">
+
+  <p class="mobile-nav" style="padding-top:5px; color:white !important; display:none">R.R.G.S.</p>
+
+  <p class="desktop-header" style="color:gray"><span style="color:white">{{page.title}}</span> // {{page.description}}.</p>
+
+
+  <ul class="mobile-nav" style="display:none">
+    <a href="/" {% if page.url == "/"%}class="active"{% endif %}>
+      <li>Type</li>
+    </a>
+    <a href="/sites" {% if page.url == "/sites"%}class="active"{% endif %}>
+      <li>Sites</li>
+    </a>
+    <a href="/inspo" {% if page.url == "/inspo"%}class="active"{% endif %}>
+      <li>Inspo</li>
+    </a>
+    <a href="/words" {% if page.url == "/words"%}class="active"{% endif %}>
+      <li>Words</li>
+    </a>
+  </ul>
+</div>
+<div class="top-bar-filler"></div>

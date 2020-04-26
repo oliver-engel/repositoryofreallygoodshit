@@ -1,3 +1,28 @@
+jQuery(document).ready(function($) {
+  var alterClass = function() {
+    var ww = document.body.clientWidth;
+    if (ww < 906) {
+      $('.top-bar').addClass('mobile-version');
+      $('.mobile-nav').show();
+      $('.desktop-header').hide();
+
+    } else if (ww >= 906) {
+      $('.desktop-header').show();
+      $('.mobile-nav').hide();
+      $('.top-bar').removeClass('mobile-version');
+    };
+  };
+  $(window).resize(function(){
+    alterClass();
+  });
+  //Fire it when the page first loads:
+  alterClass();
+});
+
+
+
+
+
 function fadeInPage() {
   if (!window.AnimationEvent) { return; }
   var fader = document.getElementById('fader');
@@ -5,6 +30,10 @@ function fadeInPage() {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
+
+  let b = baffle('.desktop-header');
+  b.reveal(500);
+
   fadeInPage();
 
   $("[href]").each(function() {

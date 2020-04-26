@@ -51,6 +51,10 @@ color:white;}
 
 .content{
   padding-left:170px;
+
+  @media (max-width: 905px) {
+    padding-left:0px;
+  }
 }
 
 .main-content{
@@ -90,28 +94,19 @@ img{
 .entry-name{
   color:white;
 }
+
 .entry:hover .entry-site::after{
   /* transition: 0.2s all; */
   padding-left:10px;
   content:'✳';
 }
 
-.text-grid{
-  display:grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-
-
-
-
-
-
 .entry > p{
   margin-bottom:0px;
 }
 
 .entry{
+  animation: .5s ease-in-out 0s 1 slideInFromLeft;
   min-width:300px;
   border-radius:3px;
   grid-gap: 24px;
@@ -120,6 +115,34 @@ img{
   /* padding:30px; */
   /* text-align: center; */
   /* box-shadow: 0px 3px 15px rgba(0,0,0,0.2); */
+}
+
+
+@keyframes slideInFromLeft {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.mobile-version{
+  width: 100%;
+  padding:0px;
+  text-align: center;
+  // display:table;
+  margin:0 auto;
+  margin-top: 10px;
+}
+
+.mobile-version li{
+  display: inline;
+  // float:left;
+  padding:10px;
+}
+
+.mobile-version li a{
 }
 
 /* .entry > p, a{
@@ -134,6 +157,16 @@ img{
   justify-items: stretch;
   align-items: stretch;
   padding:50px;
+
+  @media (max-width: 1240px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (max-width: 905px) {
+    grid-template-columns: 1fr;
+    padding: 80px 20px 20px 20px;
+  }
+
 }
 
 .text-content{
@@ -148,29 +181,27 @@ img{
 }
 
 .active{
-  /* text-decoration: overline; */
   color:yellow;
-
 }
-
-
 
 .sidebar{
   background-color: var(--black);
-  /* text-transform: uppercase; */
- z-index:1000;
+  z-index:1000;
   position: fixed;
   left:0px;
   padding:20px 30px 0px 40px;
   border-right: 1px solid gray;
   width: 100px;
   height:100vh;
+
+  @media (max-width: 905px) {
+    display:none;
+  }
 }
-/* .entry-list{
-  display:grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap:48px;
-} */
+
+.sidebar li {
+  padding-bottom:3px;
+}
 
 #fader {
   position: fixed;
@@ -227,7 +258,7 @@ html {
 body {
   font-size: 1.75em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
-  font-weight: 400;
+  font-weight: 300;
   font-family: "Fakt Mono", sans-serif;
   color: #222; }
 
@@ -235,8 +266,8 @@ body {
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "ITC Souvenir Std", sans-serif;
-  font-weight:65;
+  font-weight: 300;
+  font-family: "Fakt Mono", sans-serif;
   margin-top: 0;
   margin-bottom: 2rem;
   font-weight: 300; }
@@ -486,6 +517,9 @@ hr {
   content: "";
   display: table;
   clear: both; }
+
+
+
 
 
 /* Media Queries
