@@ -5,11 +5,14 @@ jQuery(document).ready(function($) {
       $('.top-bar').addClass('mobile-version');
       $('.mobile-nav').show();
       $('.desktop-header').hide();
+      $('.line-animation').hide();
 
     } else if (ww >= 906) {
       $('.desktop-header').show();
       $('.mobile-nav').hide();
       $('.top-bar').removeClass('mobile-version');
+      $('.line-animation').show();
+
     };
   };
   $(window).resize(function(){
@@ -31,8 +34,18 @@ function fadeInPage() {
 
 document.addEventListener('DOMContentLoaded', function() {
 
-  let b = baffle('.desktop-header');
+  let b = baffle('.desktop-header', {
+    speed: 75
+  });
+
   b.reveal(500);
+
+  let l = baffle('.line-animation', {
+    speed: 120,
+    characters: '✳✴✵✶✷✸✹✺✻✼'
+  });
+
+  l.start();
 
   fadeInPage();
 
