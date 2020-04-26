@@ -2,3 +2,18 @@
   entrysite: Interactive Experience
   siteurl: http://a-way-to-go.com/
   image: assets/img/uploads/sites/waytogo.png
+
+- entryname: Tarot-o-Bot
+  entrysite: Interactive Experience
+  siteurl: https://illo.tv/tarotobot/
+  image: assets/img/uploads/sites/tarotobot.png
+
+- entryname: ColorBox
+  entrysite: Color Palette Utility
+  siteurl: https://www.colorbox.io/
+  image: assets/img/uploads/sites/colorbox.png
+
+- entryname: The Pudding
+  entrysite: Data Viz Journalism
+  siteurl: https://pudding.cool/
+  image: assets/img/uploads/sites/pudding.png   
