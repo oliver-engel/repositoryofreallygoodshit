@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: words
 title: Words
 description: Things to read
 permalink: /words

@@ -1,0 +1,12 @@
+---
+layout: default
+title: words
+---
+
+{% for words in site.data.words %}
+  <a target="_blank" href="{{words.siteurl}}" class="entry">
+    <img src="{{words.image}}">
+    <p class="entry-name">{{words.entryname}}</p>
+    <p class="entry-site">{{words.entrysite}}</p>
+
+{% endfor %}
