@@ -1,0 +1,12 @@
+---
+layout: default
+title: Video
+---
+
+{% for video in site.data.video %}
+  <a target="_blank" href="{{video.siteurl}}" class="entry">
+    <img src="{{video.image}}">
+    <p class="entry-name">{{video.entryname}}</p>
+    <p class="entry-site">{{video.entrysite}}</p>
+
+{% endfor %}

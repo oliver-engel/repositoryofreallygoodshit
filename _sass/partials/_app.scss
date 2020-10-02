@@ -88,12 +88,16 @@ img{
 }
 
 .entry{
-  transition: 0.2s all;
+  transition: 0.1s all;
 }
 
 .entry-name{
   color:$black;
 }
+
+// .entry:hover .entry-site{
+//   font-family: "Tiempos Text";
+// }
 
 .entry:hover .entry-site::after{
   /* transition: 0.2s all; */
@@ -194,7 +198,7 @@ img{
 }
 
 .active{
-  color:$link-active;
+  color:$black;
 }
 
 .sidebar{
@@ -208,6 +212,7 @@ img{
   // border-right: 1px solid gray;
   width: 100px;
   height:94vh;
+  font-family: "Graphik";
 
   // box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 
@@ -222,10 +227,17 @@ img{
 // }
 
 .sidebar li {
-  padding-bottom:3px;
+  margin-bottom:3px;
 }
-.sidebar a:hover{
-  // color:red !important;
+.sidebar .active li{
+  // border-bottom: 1px solid blue;
+// font-weight: 500;
+// text-transform: uppercase;
+}
+
+.sidebar a:active{
+  border-bottom: 1px solid blue;
+
 }
 
 #fader {
@@ -325,7 +337,7 @@ p {
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
-  color: gray;
+  color: $gray;
   text-decoration: none;
   transition: 0.2s all;
 }
@@ -335,9 +347,11 @@ a:hover {
 }
 
 a:active{
-  color:yellow;
+  color:$black;
 
   }
+
+
 
 
 /* Buttons

@@ -1,8 +1,8 @@
 ---
-layout: default
-title: Inspo
+layout: video
+title: Video
 description: Feast yer eyes
-permalink: /inspo
+permalink: /video
 section: home
 
 ---

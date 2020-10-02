@@ -1,5 +1,5 @@
 - entryname: Fakt
-  entrysite: TYPE BY
+  entrysite: Type By
   siteurl: https://www.typeby.com/fonts/fakt
   image: assets/img/uploads/type/fakt.png
 
@@ -12,11 +12,6 @@
   entrysite: Klim Type Foundry
   siteurl: https://klim.co.nz/retail-fonts/tiempos-text/
   image: assets/img/uploads/type/tiempos.png
-
-- entryname: Digestive
-  entrysite: Studio Triple
-  siteurl: http://studiotriple.fr/travaux/typefaces/digestive/
-  image: assets/img/uploads/type/digestive.png
 
 - entryname: Nichrome
   entrysite: Future Fonts
